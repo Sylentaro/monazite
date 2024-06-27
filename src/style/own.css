@@ -1,0 +1,129 @@
+* {
+    font-family: 'Plus Jakarta Sans', 'sans-serif';
+}
+
+#page-background {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+}
+
+#main-container-col {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 1.25rem;
+    overflow-x: auto;
+}
+
+input {
+    background-color: rgb(61, 61, 61);
+    color: rgb(190, 190, 190);
+    font-family: 'Plus Jakarta Sans', 'sans-serif';
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 8px;
+    border-radius: 6px;
+    height: 3rem;
+    width: 24rem;
+}
+input:focus {
+    box-shadow: none;
+    outline: none;     
+}
+input::placeholder {
+    color: rgb(190, 190, 190);
+    font-family: 'Plus Jakarta Sans', 'sans-serif';
+    font-size: 20px;
+    font-weight: 600;
+}
+.text-yellow-app {
+    color: #FFD241;
+}
+.bg-yellow-app {
+    background-color: #FFD241;
+}
+.border-yellow-app {
+    border-color: #FFD241;
+}
+
+.admbody{
+	background-color:black;
+	color:white;
+}
+
+.admbody h1{
+	margin-top:0px;
+	margin-bottom:0px;
+    font-size: 30px;
+}
+
+.admbody a{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	outline-width: 1px;
+	outline-color:#A9A9A9;
+	outline-style:solid;
+	text-align:center;
+	width:20vw;
+	margin-left:40vw;
+	margin-right:40vw;
+	margin-top:10vh;
+	padding: 5px 5px 10px 5px;
+	min-width:250px;
+}
+
+.option{
+	outline-width: 1px;
+	outline-color:#A9A9A9;
+	outline-style:solid;
+	width: 10vw;
+	margin-left:5vw;
+	margin-right:5vw;
+	margin-top:10px;
+	min-width:120px;
+}
+
+/* podstrona */
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	text-align:center;
+	width:20vw;
+	margin-left:40vw;
+	margin-right:40vw;
+	padding:10px;
+}
+
+.button{
+	text-align:center;
+	outline-width: 1px;
+	outline-color:#A9A9A9;
+	outline-style:solid;
+	width: 100px;
+	margin-top:20px;
+}
+
+.table, th, td{
+	margin-top: 20px;
+	border-collapse: collapse;
+	border: 1px solid;
+
+}
+
+th, td{
+	padding: 15px;
+}
+
+tr:hover {
+	background-color: #242424;
+}

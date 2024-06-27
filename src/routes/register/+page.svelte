@@ -1,10 +1,9 @@
 <script lang="ts">
     // @ts-nocheck
 	import { onMount } from "svelte";
-    import LoginForm from "../components/LoginForm.svelte";
-    import Header from "../components/text/Header.svelte";
+    import RegisterForm from "../../components/RegisterForm.svelte";
+    import Header from "../../components/text/Header.svelte";
 	import { goto } from "$app/navigation";
-	import type { Passenger } from "@prisma/client";
     
     let loading: boolean = true
     async function getAuthToken() {
@@ -31,11 +30,10 @@
         loading = false;
     }); 
 </script>
-
-<title>
-    Monazite
-</title>
-{#if !loading}
+{#if !loading}    
+    <title>
+        Monazite
+    </title>
     <div class="flex flex-col items-center w-screen h-screen pt-12 bg-neutral-950">
         <Header>Welcome to TaxiApp</Header>
             <div class="flex items-center justify-center w-56 h-56 mt-5 bg-yellow-app rounded-full">
@@ -65,11 +63,11 @@
             </div>
         <div class="mt-14 flex flex-col items-center">
             <Header>Log into the App</Header>
-            <LoginForm/>
+            <RegisterForm/>
         </div>
     </div>
-{:else}
+    {:else}
     <div>
         Not loaded yet...
-    </div>
-{/if}
+        </div>
+    {/if}
