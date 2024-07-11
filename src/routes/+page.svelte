@@ -16,7 +16,6 @@
             });
             if (response.ok) {
                 //token was decoded
-                /sd
                 goto("/home")
             }
             else {
